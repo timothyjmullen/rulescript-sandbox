@@ -85,8 +85,7 @@ function foo(items) {
             <div class="header">Output: <span class="reset fr" title="Reset Console">&#128260;</span></div>
             <div id="move_console">
               <div id="output">
-                Error: here is some test text.  Error: here is some test text.  Error: here is some test text.  Error: here is some test text.  Error: here is some test text.  Error: here is some test text.  Error: here is some test text.
-                <br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.
+                Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.<br />  Error: here is some test text.
               </div>
             </div>
           </div>
@@ -157,15 +156,15 @@ function foo(items) {
               docHeight = Math.max(document.documentElement["clientHeight"], document.body["scrollHeight"], document.documentElement["scrollHeight"], document.body["offsetHeight"], document.documentElement["offsetHeight"]);
           _on(el, 'mousedown', function (e) {
             isDragReady = true;
-            //corssbrowser mouse pointer values
+            //crossbrowser mouse pointer values
             e.pageX = e.pageX || e.clientX + (document.documentElement.scrollLeft ?
               document.documentElement.scrollLeft :
               document.body.scrollLeft);
             e.pageY = e.pageY || e.clientY + (document.documentElement.scrollTop ?
               document.documentElement.scrollTop :
               document.body.scrollTop);
-            dragoffset.x = (docWidth - e.pageX) - (docWidth - (el.offsetLeft + el.offsetWidth));
-            dragoffset.y = (docHeight - e.pageY) - (docHeight - (el.offsetTop + el.offsetHeight));
+            dragoffset.x = e.pageX - (el.offsetLeft + el.offsetWidth);
+            dragoffset.y = e.pageY - (el.offsetTop + el.offsetHeight);
             console.log(docWidth + ' ' + e.pageX + ' ' + el.offsetLeft + ' ' + el.offsetWidth + ' ' + dragoffset.x + ' ' + (docWidth - (el.offsetLeft + el.offsetWidth)) + ' ' + docHeight + ' ' + dragoffset.y);
           });
           _on(document, 'mouseup', function () {
@@ -179,8 +178,8 @@ function foo(items) {
               e.pageY = e.pageY || e.clientY + (document.documentElement.scrollTop ?
                 document.documentElement.scrollTop :
                 document.body.scrollTop);
-              el.style.bottom = ((docHeight - e.pageY) - dragoffset.y) + "px";
-              el.style.right = ((docWidth - e.pageX) - dragoffset.x) + "px";
+              el.style.bottom = ((document.getElementById('main').offsetHeight + dragoffset.y) - e.pageY) + "px";
+              el.style.right = ((document.getElementById('main').offsetWidth + dragoffset.x) - e.pageX) + "px";
             }
           });
         };
