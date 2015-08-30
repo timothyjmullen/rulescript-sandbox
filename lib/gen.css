@@ -312,11 +312,11 @@ input.bottom {
 #console .header .reset {
 	cursor:pointer;
 	font-weight:normal;
-	font-size:11px;
+
 }
 #console .header .reset:hover {
 	cursor:pointer;
-	color:red;
+	color:#888;
 	font-weight:normal;
 }
 #move_console {
@@ -373,7 +373,7 @@ input.bottom {
 #run {
 	position:relative;
 	float:right;
-	width:90px;
+	width:70px;
 	height:40px;
 	background-color:#E0E0E0;
 	color:#555;
@@ -385,18 +385,25 @@ input.bottom {
 	cursor:pointer;
 }
 .link {
-	font-size:18px;
-	position:absolute;
-	bottom:6px;
-	left:6px;
+	font-size:14px;
+	font-weight:normal;
+	position:relative;
+	padding-left:6px;
+	line-height:40px;
 	color:#ccc;
-	-webkit-transform: rotate(-50deg);
-	-moz-transform: rotate(-50deg);
-	-ms-transform: rotate(-50deg);
-	-o-transform: rotate(-50deg);
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 .link:hover {
+	color:#fff;
+	cursor: pointer;
+}
+.format {
+	font-size:16px;
+	font-weight:normal;
+	position:relative;
+	line-height:40px;
+	color:#ccc;
+}
+.format:hover {
 	color:#fff;
 	cursor: pointer;
 }
@@ -424,7 +431,7 @@ li.tabs {
 	height:35px;
 	background-color:#aabecd;
 	text-align:left;
-	padding:11px 10px 0 10px;
+	padding:14px 10px 0 10px;
 	text-transform: uppercase;
 }
 li.tabs:hover {
@@ -443,7 +450,7 @@ li.tabs.add:hover {
 	cursor:pointer;
 }
 .close {
-	font-size: 90%;
+	font-size: 100%;
 	padding-left:10px;
 	color:#909090;
 }

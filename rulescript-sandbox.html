@@ -5,6 +5,7 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <title>Acxiom Impact&trade; | RuleScript Sandbox</title>
     <meta content="IE=9" http-equiv="X-UA-Compatible" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
     <link href='lib/gen.css' rel='stylesheet' type='text/css'>
 </head>
@@ -55,7 +56,7 @@
         <div id="data">
           <div class="header">
             <h1 class="fl">Set Data</h1>
-            <div id="data_controls"><span class="clear" title="Reset Data">&#128260;</span>&#160;&#160;<span class="add_data" title="Add Data">&#10010;</span></div>
+            <div id="data_controls"><span class="clear" title="Reset Data"><i class="fa fa-refresh"></i></span>&#160;&#160;<span class="add_data" title="Add Data"><i class="fa fa-plus"></i></span></div>
           </div>
           <div class="data_input">
             <div class="input_block">
@@ -68,9 +69,9 @@
         <div id="main">
             <div id="tabs">
               <ul class="tabs">
-                <li class="tabs active">New Rule <span class="close" title="Close Tab">&#10060;</span></li>
-                <li class="tabs">Another Rule <span class="close" title="Close Tab">&#10060;</span></li>
-                <li id="add_tab" class="tabs add" title="Add Tab">&#10010;</li>
+                <li class="tabs active">New Rule <span class="close" title="Close Tab"><i class="fa fa-times"></i></span></li>
+                <li class="tabs">Another Rule <span class="close" title="Close Tab"><i class="fa fa-times"></i></span></li>
+                <li id="add_tab" class="tabs add" title="Add Tab"><i class="fa fa-plus"></i></li>
               </ul>
             </div>
             <!-- EDITOR DIV -->
@@ -82,35 +83,23 @@ function foo(items) {
 }</div>
           <!-- RUN BLOCK -->
           <div id="runblock" title="Execute Rule (Ctrl+Enter)">
-            <span class="link" title="Share Rule (Alt+S)">&#128279;</span>
+            <span class="format" title="Tidy Up Code (Alt+T)"><i class="fa fa-code"></i></span>
+            <span class="link" title="Share Rule (Alt+S)"><i class="fa fa-link"></i></span>
             <div id="run">RUN</div>
           </div>
           <!-- CONSOLE -->
           <div id="console">
-            <div id="resizer"><span class="lines"></span></div>
+            <!--<div id="resizer"><span class="lines"></span></div>-->
             <div id="move_console">
-              <div id="con_header" class="header">OUTPUT <span id="con_reset" class="reset fr" title="Reset Console">&#128260;</span></div>
+              <div id="con_header" class="header">OUTPUT <span id="con_reset" class="reset fr" title="Reset Console"><i class="fa fa-refresh"></i></span></div>
               <div id="print_console">
-                <div id="output">
-                  <b>Error:</b> Unrecoverable syntax error.<br />
-                </div>
-                  <div id="output">
-                    <b>Error:</b> Unrecoverable syntax error.<br />
-                  </div>
-                    <div id="output">
-                      <b>Error:</b> Unrecoverable syntax error.<br />
-                    </div>
-                      <div id="output">
-                        <b>Error:</b> Unrecoverable syntax error.<br />
-                      </div>
-                        <div id="output">
-                          <b>Error:</b> Unrecoverable syntax error.<br />
-                        </div>
-                          <div id="output">
-                            <b>Error:</b> Unrecoverable syntax error.<br />
-                          </div>
+
               </div>
             </div>
+          </div>
+          <!-- POPUP -->
+          <div id="popup">
+            <div id="pop_header"></div>
           </div>
         </div>
         <!-- FOOTER -->
