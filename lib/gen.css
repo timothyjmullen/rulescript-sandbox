@@ -257,26 +257,37 @@ input.bottom {
   position: absolute;
   top: 40px;
   right: 0;
-  bottom: 0;
+  bottom: 150px;
   left: 0;
 	border-top:10px solid #FFF;
 	border-bottom:5px solid #FFF;
+}
+.ace_search {
+	border-radius:0!important;
+	border:0!important;
+	padding:5px!important;
+}
+.ace_searchbtn, .ace_replacebtn {
+	padding: 0 4px !important;
+}
+.ace_searchbtn_close:hover {
+	background-color:inherit!important;
+	background-position:50% 0 !important;
 }
 /* CONSOLE
 **********************************************************/
 #console {
 	position:absolute;
-	bottom:10px;
-	right:18px;
-	left:auto;
+	bottom:0;
+	right:0;
+	left:0;
 	top:auto;
-	height: 300px;
-	width: 400px;
+	height: 150px;
 	z-index:8;
 }
 #console .header {
 	background-color:rgba(208,208,208, 0.8);
-	cursor:move;
+	cursor:n-resize;
 	padding:2px 8px;
 	height:16px;
 	font-weight:bold;
@@ -315,7 +326,6 @@ input.bottom {
 	right:0;
 	left:0;
 	z-index:8;
-	border:1px solid rgba(208,208,208, 0.8);
 	background-color:rgba(255,255,255, 0.9);
 }
 #print_console {
@@ -327,7 +337,7 @@ input.bottom {
 	height:inherit;
 	width: inherit;
 	z-index:8;
-	padding:10px;
+	padding:5px 10px;
 	overflow-x:auto;
 	overflow-y:scroll;
 	border-top:2px solid rgba(248,248,248, 0.8);
@@ -342,14 +352,14 @@ input.bottom {
 	top: 0;
 	cursor: nw-resize;
 }
-.lines {
+/*.lines {
 	margin:3px 3px;
 	border-left:1px solid #999;
 	width:8px;
 	display:block;
 	height:8px;
 	border-top:1px solid #999;
-}
+}*/
 /* RUN
 **********************************************************/
 #runblock {
