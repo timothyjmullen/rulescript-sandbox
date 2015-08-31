@@ -285,6 +285,8 @@ input.bottom {
 	background: #555;
 	z-index:999;
 	display:none;
+	-webkit-transition: all 0.5s;
+	transition: all 0.3s
 }
 #pop_header {
 	background-color:#444;
@@ -405,7 +407,7 @@ input.bottom {
 	position:absolute;
 	right:0;
 	top:0;
-	width:100px;
+	width:120px;
 	height:40px;
 	z-index:9;
 }
@@ -683,4 +685,12 @@ color:#373b3d;
 	border-radius: 3px;
 	color:#FFF;
 	padding:2px;
+}
+#kbshortcutmenu h1 {
+	color:#000;
+	width:100%;
+	text-align:left;
+	float:left;
+	padding:0;
+	margin-bottom:10px;
 }
