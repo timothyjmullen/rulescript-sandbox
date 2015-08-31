@@ -88,6 +88,7 @@ a:hover {
 }
 #changes {display: none;}
 #changelog {cursor: pointer;}
+#keys {cursor: pointer;}
 .fl {
 	float: left;
 }
@@ -274,6 +275,52 @@ input.bottom {
 	background-color:inherit!important;
 	background-position:50% 0 !important;
 }
+/* POPUP
+**********************************************************/
+#popup {
+	position:absolute;
+	top:30%;
+	left:30%;
+	width: 320px;
+	background: #555;
+	z-index:999;
+	display:none;
+}
+#pop_header {
+	background-color:#444;
+	position:relative;
+	height:20px;
+	width:100%;
+}
+#pop_close {
+	color:#ccc;
+	line-height:20px;
+	cursor:pointer;
+	padding-right:5px;
+}
+#pop_close:hover {
+	color:#fff;
+}
+#pop_content {
+	padding:10px 10px;
+	color:#fff;
+}
+#pop_in {
+	margin-top:8px;
+}
+#pop_title {
+	color:#fff;
+	line-height:20px;
+	padding-left:10px;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	cursor:default;
+	font-weight:bold;
+}
 /* CONSOLE
 **********************************************************/
 #console {
@@ -286,7 +333,7 @@ input.bottom {
 	z-index:8;
 }
 #console .header {
-	background-color:rgba(208,208,208, 0.8);
+	background-color:rgba(208,208,208, 0.7);
 	cursor:n-resize;
 	padding:2px 8px;
 	height:16px;
@@ -302,8 +349,8 @@ input.bottom {
   content: ". . . .";
   opacity: 1;
   top: -2px;
-  left: 45%;
-  right: 45%;
+  left: 48%;
+  right: 42%;
 	/*border-top:1px solid #fff;
 	border-bottom:1px solid #fff;*/
   position: absolute;
@@ -343,7 +390,7 @@ input.bottom {
 	border-top:2px solid rgba(248,248,248, 0.8);
 	border-bottom:2px solid rgba(248,248,248, 0.8);
 }
-#resizer {
+/*#resizer {
 	width: 13px;
 	height: 13px;
 	position:absolute;
@@ -351,14 +398,6 @@ input.bottom {
 	left: 0;
 	top: 0;
 	cursor: nw-resize;
-}
-/*.lines {
-	margin:3px 3px;
-	border-left:1px solid #999;
-	width:8px;
-	display:block;
-	height:8px;
-	border-top:1px solid #999;
 }*/
 /* RUN
 **********************************************************/
@@ -366,7 +405,7 @@ input.bottom {
 	position:absolute;
 	right:0;
 	top:0;
-	width:120px;
+	width:100px;
 	height:40px;
 	z-index:9;
 }
@@ -389,7 +428,7 @@ input.bottom {
 	font-weight:normal;
 	position:relative;
 	padding-left:6px;
-	line-height:40px;
+	line-height:42px;
 	color:#ccc;
 }
 .link:hover {

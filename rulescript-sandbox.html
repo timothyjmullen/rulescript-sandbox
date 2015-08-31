@@ -36,7 +36,7 @@
                 </li>
                 <li class="navi"><a class="navi bright" href="https://connected.acxiom.com/sites/emarketingdelivery/cs/WebBased%20Tools%20and%20Pages/RS%20Sandbox/DCS_RS_Sandbox.html">RuleScript&#160;Sandbox</a>
                 </li>
-                <li class="navi"><a class="navi bright active" href="https://connected.acxiom.com/sites/emarketingdelivery/cs/WebBased%20Tools%20and%20Pages/RS%20Sandbox/DCS_RS_Sandbox.html">RuleScript&#160;Sandbox <span class="sup_tag">BETA</span></a>
+                <li class="navi"><a class="navi bright active" href="https://connected.acxiom.com/sites/emarketingdelivery/cs/WebBased+Tools+and+Pages/RS+SB/rulescript-sandbox.html">RuleScript&#160;Sandbox <span class="sup_tag">BETA</span></a>
                 </li>
                 <li class="navi"><a class="navi bright" href="https://connected.acxiom.com/sites/emarketingdelivery/cs/WebBased%20Tools%20and%20Pages/Social%20Tool/DCS_Social_Tool.html">Social&nbsp;Links</a>
                 </li>
@@ -70,7 +70,7 @@
             <div id="tabs">
               <ul class="tabs">
                 <li class="tabs active">New Rule <span class="close" title="Close Tab"><i class="fa fa-times"></i></span></li>
-                <li class="tabs">Another Rule <span class="close" title="Close Tab"><i class="fa fa-times"></i></span></li>
+                <li class="tabs">Coming Soon <span class="close" title="Close Tab"><i class="fa fa-times"></i></span></li>
                 <li id="add_tab" class="tabs add" title="Add Tab"><i class="fa fa-plus"></i></li>
               </ul>
             </div>
@@ -83,8 +83,8 @@ function foo(items) {
 }</div>
           <!-- RUN BLOCK -->
           <div id="runblock" title="Execute Rule (Ctrl+Enter)">
-            <span class="format" title="Tidy Up Code (Alt+T)"><i class="fa fa-code"></i></span>
-            <span class="link" title="Share Rule (Alt+S)"><i class="fa fa-link"></i></span>
+            <!--<span class="format" title="Tidy Up Code (Alt+T)"><i class="fa fa-code"></i></span>-->
+            <span class="link" id="link" title="Share Rule (Alt+S)"><i class="fa fa-link"></i></span>
             <div id="run">RUN</div>
           </div>
           <!-- CONSOLE -->
@@ -99,7 +99,10 @@ function foo(items) {
           </div>
           <!-- POPUP -->
           <div id="popup">
-            <div id="pop_header"></div>
+            <div id="pop_header">
+              <div id="pop_title" class="fl"></div>
+              <span id="pop_close" class="fr"><i class="fa fa-times"></i></span></div>
+            <div id="pop_content"></div>
           </div>
         </div>
         <!-- FOOTER -->
@@ -114,6 +117,7 @@ function foo(items) {
                     </noscript>
                     Acxiom </div>
                 <div class="fr gf">
+                  <a id="keys" title="Click to see list of available key commands">Key Commands</a> |
                     <a id="changelog">Changelog</a> |
                     <script language="JavaScript">
                         var username = "timull";
