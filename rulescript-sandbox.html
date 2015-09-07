@@ -68,11 +68,10 @@
         <!-- EDITOR COLUMN -->
         <div id="main">
             <div id="tabs">
-              <ul class="tabs">
-                <li class="tabs active">New Rule <span class="close" title="Close Tab"><i class="fa fa-times"></i></span></li>
-                <li class="tabs">Coming Soon <span class="close" title="Close Tab"><i class="fa fa-times"></i></span></li>
-                <li id="add_tab" class="tabs add" title="Add Tab"><i class="fa fa-plus"></i></li>
+              <ul id="tablist" class="tabs">
+                <li class="tabs active" title="New Rule">New Rule <span class="close" title="Close Tab"><i class="fa fa-times"></i></span></li>
               </ul>
+              <div id="add_tab" class="add" title="Add Tab"><i class="fa fa-plus"></i></div>
             </div>
             <!-- EDITOR DIV -->
             <div id="editor"></div>
@@ -80,7 +79,7 @@
           <div id="runblock" title="Execute Rule (Ctrl+Enter)">
             <span class="format" id="format" title="Beautify Code (Alt+B)"><i class="fa fa-code"></i></span>
             <span class="link" id="link" title="Share Rule (Alt+S)"><i class="fa fa-link"></i></span>
-            <div id="run">RUN</div>
+            <div id="run">Run</div>
           </div>
           <!-- CONSOLE -->
           <div id="console">

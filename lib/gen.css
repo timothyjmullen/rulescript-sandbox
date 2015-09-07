@@ -202,7 +202,7 @@ a.navi.active {
 }
 #data .header {
 	background-color:#8098ac;
-	height:45px;
+	height:40px;
 	text-align:left;
 }
 #data h1 {
@@ -309,6 +309,12 @@ input.bottom {
 }
 #pop_in {
 	margin-top:8px;
+	float:left;
+}
+#pop_in_tab {
+	margin-top:8px;
+	float:left;
+	width:77%;
 }
 #pop_title {
 	color:#fff;
@@ -322,6 +328,15 @@ input.bottom {
     user-select: none;
 	cursor:default;
 	font-weight:bold;
+}
+#tsubmit {
+	margin:5px 0 10px 0;
+	float:right;
+	background-color:#444;
+	padding:10px;
+}
+#tsubmit:hover {
+	background-color:#333;
 }
 /* CONSOLE
 **********************************************************/
@@ -461,32 +476,48 @@ ul.tabs {
 	padding:0;
 	margin:0;
 	list-style: none;
-	height:35px;
+	position:relative;
+	float:left;
+	height:40px;
 	border:0;
 	border-collapse:collapse;
+	font-size:0px;
 }
-li.tabs {
+ul.tabs li {
 	display:inline-block;
 	border:0;
-	margin:-2px 0 0 0;
+	margin:0 1px 0 0;
 	height:35px;
 	background-color:#aabecd;
 	text-align:left;
 	padding:14px 10px 0 10px;
-	text-transform: uppercase;
+	font-size:14px;
 }
-li.tabs:hover {
+ul.tabs li:hover {
 	background-color:#E0E0E0;
 	cursor:pointer;
 }
-li.tabs.active {
+ul.tabs li.active {
 	background-color:#fff;
 }
-li.tabs.add {
+#cons {
+	max-width:80px;
+	overflow:hidden;
+	display:inline-block;
+	margin:-4px 0;
+	white-space: nowrap;
+}
+#add_tab {
 	background-color:inherit;
+	display:block;
+	height:40px;
+	width:20px;
+	padding:13px 7px;
+	position:relative;
+	float:left;
 	color:#ccc;
 }
-li.tabs.add:hover {
+#add_tab:hover {
 	color:#fff;
 	cursor:pointer;
 }
