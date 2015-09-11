@@ -309,6 +309,7 @@ input.bottom {
 }
 #pop_in {
 	margin-top:8px;
+	margin-bottom:8px;
 	float:left;
 }
 #pop_in_tab {
@@ -487,10 +488,9 @@ ul.tabs li {
 	display:inline-block;
 	border:0;
 	margin:0 1px 0 0;
-	height:35px;
+	height:40px;
 	background-color:#aabecd;
 	text-align:left;
-	padding:14px 10px 0 10px;
 	font-size:14px;
 }
 ul.tabs li:hover {
@@ -502,9 +502,11 @@ ul.tabs li.active {
 }
 #cons {
 	max-width:80px;
+	height:40px;
+	padding:0 0 0 7px;
+	line-height: 42px;
 	overflow:hidden;
 	display:inline-block;
-	margin:-4px 0;
 	white-space: nowrap;
 }
 #add_tab {
@@ -512,7 +514,7 @@ ul.tabs li.active {
 	display:block;
 	height:40px;
 	width:20px;
-	padding:13px 7px;
+	padding:14px 7px;
 	position:relative;
 	float:left;
 	color:#ccc;
@@ -523,12 +525,21 @@ ul.tabs li.active {
 }
 .close {
 	font-size: 100%;
-	padding-left:10px;
+	line-height:42px;
+	height:42px;
+	display:inline-block;
+	padding:0 7px;
+	margin:0;
+	vertical-align: top;
 	color:#909090;
 }
 .close:hover {
 	color:red;
 	cursor: pointer;
+}
+.warn {
+	color:#fff;
+	font-size:90%;
 }
 /* FORM INPUT
 **********************************************************/
@@ -724,4 +735,11 @@ color:#373b3d;
 	float:left;
 	padding:0;
 	margin-bottom:10px;
+}
+.loading {
+	font-size:200%;
+	position:absolute;
+	left:50%;
+	top: 40%
+	color:#FFF;
 }
