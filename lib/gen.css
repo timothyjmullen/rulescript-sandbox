@@ -226,7 +226,7 @@
 	.clear:hover {
 		color:red;
 	}
-	.data_input {
+	#data_input {
 		padding: 5px 0;
 		position:absolute;
 		top:45px;
@@ -244,6 +244,10 @@
 		-ms-border-radius:  3px 3px 0 0;
 		-o-border-radius:  3px 3px 0 0;
 		border-radius: 3px 3px 0 0;
+		color:#666;
+	}
+	input.top:disabled {
+		background-color:#E0E0E0;
 	}
 	input.bottom {
 		-webkit-border-radius: 0 0 3px 3px;
@@ -251,6 +255,7 @@
 		-ms-border-radius: 0 0 3px 3px;
 		-o-border-radius: 0 0 3px 3px;
 		border-radius: 0 0 3px 3px;
+		color:#666;
 	}
 	/* EDITOR
 	**********************************************************/
