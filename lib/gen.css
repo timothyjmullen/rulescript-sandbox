@@ -197,7 +197,7 @@
 		left:0;
 		top:35px;
 		bottom:25px;
-		background-color:#DEDEDE;
+		background-color:#f0f0f0;
 		z-index:5;
 	}
 	#data .header {
@@ -227,35 +227,28 @@
 		color:red;
 	}
 	#data_input {
-		padding: 5px 0;
+		padding: 0;
 		position:absolute;
 		top:45px;
 		bottom:0;
 		overflow-x:auto;
 	}
 	.input_block {
-		margin:5px auto;
-		width:90%;
+		margin:4px auto;
+		width:95%;
 	}
 	input.top {
-		border-bottom:0;
-		-webkit-border-radius:  3px 3px 0 0;
-		-moz-border-radius:  3px 3px 0 0;
-		-ms-border-radius:  3px 3px 0 0;
-		-o-border-radius:  3px 3px 0 0;
-		border-radius: 3px 3px 0 0;
 		color:#777;
 		border-color:#F8F8F8;
+		border:0;
+		border-radius: 0;
 	}
 	input.top:disabled {
-		background-color:#F8F8F8;
+		background-color:#D0D0D0;
 	}
 	input.bottom {
-		-webkit-border-radius: 0 0 3px 3px;
-		-moz-border-radius: 0 0 3px 3px;
-		-ms-border-radius: 0 0 3px 3px;
-		-o-border-radius: 0 0 3px 3px;
-		border-radius: 0 0 3px 3px;
+		border-radius: 0;
+		border:0;
 		color:#777;
 		border-color:#F8F8F8;
 	}
@@ -418,7 +411,7 @@
 	#time:hover span {
 		cursor:pointer;
 		left:68px;
-		top:-65px;
+		top:-100px;
 	}
 	#time:hover {
 		cursor:default;
@@ -426,11 +419,11 @@
 	span.tooltip {
 	      position: absolute;
 				left: -9999px;
-	      width: 300px;
-	      height: 40px;
+	      width: 320px;
+	      height: 80px;
 	      line-height: 20px;
 	      padding: 3px;
-	      font-size: 14px;
+	      font-size: 12px;
 	      text-align: center;
 	      color: rgb(255, 255, 255);
 	      background: rgb(102, 102, 102);
@@ -452,7 +445,7 @@
 	      border-width: 8px;
 	      border-style: solid;
 	      border-color: #666 transparent transparent transparent;
-	      top: 48px;
+	      top: 88px;
 	      left: 46px;
 	}
 	/*#resizer {
