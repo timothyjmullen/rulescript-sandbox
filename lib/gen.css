@@ -83,7 +83,7 @@
 		left:160px;
 		right:0;
 		top:35px;
-		bottom:25px;
+		bottom:28px;
 		overflow:hidden;
 	}
 	#changes {display: none;}
@@ -178,6 +178,7 @@
 		width: 100%;
 		position: absolute;
 		bottom: 0;
+		border-top:3px solid #C7C7C7;
 		left: 0;
 		padding: 0px 0px 0px 0px;
 		vertical-align: middle;
@@ -204,6 +205,7 @@
 		background-color:#8098ac;
 		height:40px;
 		text-align:left;
+		border-bottom:3px solid #C7C7C7;
 	}
 	#data h1 {
 		color:#FFF;
@@ -224,7 +226,7 @@
 		color:#fff;
 	}
 	.clear:hover {
-		color:red;
+		color:#db6262;
 	}
 	#data_input {
 		padding: 0;
@@ -235,22 +237,27 @@
 	}
 	.input_block {
 		margin:4px auto;
-		width:95%;
+		width:93%;
 	}
 	input.top {
 		color:#777;
-		border-color:#F8F8F8;
-		border:0;
+		border-top:0;
+		border-bottom:0;
+		border-left:0;
+		border-right:3px solid #C7C7C7;
 		border-radius: 0;
 	}
 	input.top:disabled {
 		background-color:#D0D0D0;
 	}
-	input.bottom {
+	input.bottom, select.bottom {
 		border-radius: 0;
-		border:0;
+		width:100%;
+		border-bottom:3px solid #D0D0D0;
+		border-left:0;
+		border-top:0;
+		border-right:3px solid #D0D0D0;
 		color:#777;
-		border-color:#F8F8F8;
 	}
 	/* EDITOR
 	**********************************************************/
@@ -346,12 +353,14 @@
 		bottom:0;
 		right:0;
 		left:0;
+		border-top:3px solid #CCC;
+		border-bottom:0;
 		top:auto;
 		height: 150px;
 		z-index:8;
 	}
 	#console .header {
-		background-color:rgba(208,208,208, 0.7);
+		background-color:#f0f0f0;
 		cursor:n-resize;
 		padding:2px 8px;
 		height:16px;
@@ -521,6 +530,7 @@
 		float:left;
 		height:40px;
 		border:0;
+		border-right:3px solid #73889a;
 		border-collapse:collapse;
 		font-size:0px;
 	}
@@ -574,7 +584,7 @@
 		color:#909090;
 	}
 	.close:hover {
-		color:red;
+		color:#db6262;
 		cursor: pointer;
 	}
 	.warn {
@@ -583,7 +593,7 @@
 	}
 	/* FORM INPUT
 	**********************************************************/
-	INPUT {
+	INPUT, SELECT {
 		font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #000;
 		font-size: 13px;
