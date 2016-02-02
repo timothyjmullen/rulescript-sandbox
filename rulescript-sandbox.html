@@ -62,6 +62,13 @@
 
           </div>
         </div>
+        <!-- POPUP -->
+        <div id="popup">
+          <div id="pop_header">
+            <div id="pop_title" class="fl"></div>
+            <span id="pop_close" class="fr"><i class="fa fa-times"></i></span></div>
+          <div id="pop_content"></div>
+        </div>
         <!-- EDITOR COLUMN -->
         <div id="main">
             <div id="tabs">
@@ -72,8 +79,9 @@
             <div id="editor"><span class="loading"><i class="fa fa-spinner fa-pulse"></i></span></div>
           <!-- RUN BLOCK -->
           <div id="runblock" title="Execute Rule (Ctrl+Enter)">
-            <span class="format" id="format" title="Beautify Code (Alt+B)"><i class="fa fa-code"></i></span>
-            <span class="link" id="link" title="Share Rule (Alt+S)"><i class="fa fa-link"></i></span>
+            <span class="format" id="collaborate" title="Collaborate" onclick="TogetherJS(this); return false;"><i class="fa fa-comments"></i></span>
+            <span class="link" id="format" title="Beautify Code (Alt+B)"><i class="fa fa-code"></i></span>
+            <span class="link" id="link" title="Share Rule (Alt+S)"><i class="fa fa-link dalink"></i></span>
             <div id="run">Run</div>
           </div>
           <!-- CONSOLE -->
@@ -86,13 +94,7 @@
               </div>
             </div>
           </div>
-          <!-- POPUP -->
-          <div id="popup">
-            <div id="pop_header">
-              <div id="pop_title" class="fl"></div>
-              <span id="pop_close" class="fr"><i class="fa fa-times"></i></span></div>
-            <div id="pop_content"></div>
-          </div>
+
         </div>
         <!-- FOOTER -->
         <div id="footer">
@@ -125,6 +127,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src="lib/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="lib/sandbox.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
 </body>
 
 </html>

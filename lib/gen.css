@@ -472,7 +472,7 @@
 		position:absolute;
 		right:0;
 		top:0;
-		width:120px;
+		width:140px;
 		height:40px;
 		z-index:9;
 	}
@@ -492,7 +492,7 @@
 	}
 	.link {
 		font-size:14px;
-		font-weight:normal;
+		font-weight:lighter;
 		position:relative;
 		padding-left:6px;
 		line-height:42px;
@@ -502,8 +502,9 @@
 		color:#fff;
 		cursor: pointer;
 	}
+	.dalink {font-size:13px;}
 	.format {
-		font-size:16px;
+		font-size:14px;
 		font-weight:normal;
 		position:relative;
 		line-height:40px;
