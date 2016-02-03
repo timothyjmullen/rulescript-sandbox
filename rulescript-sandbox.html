@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <div id="container">
         <!-- HEADER & NAVIGATION -->
         <div id="nav">
@@ -76,10 +77,12 @@
               <div id="add_tab" class="add" title="Add Tab (Alt+N)"><i class="fa fa-plus"></i></div>
             </div>
             <!-- EDITOR DIV -->
+
             <div id="editor"><span class="loading"><i class="fa fa-spinner fa-pulse"></i></span></div>
+
           <!-- RUN BLOCK -->
           <div id="runblock" title="Execute Rule (Ctrl+Enter)">
-            <span class="format" id="collaborate" title="Collaborate" onclick="TogetherJS(this); return false;"><i class="fa fa-comments"></i></span>
+            <span class="format" id="collaborate" title="Collaborate" onclick="fireThis();"><i class="fa fa-comments"></i></span>
             <span class="link" id="format" title="Beautify Code (Alt+B)"><i class="fa fa-code"></i></span>
             <span class="link" id="link" title="Share Rule (Alt+S)"><i class="fa fa-link dalink"></i></span>
             <div id="run">Run</div>
@@ -126,8 +129,11 @@
     <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src="lib/ace.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Firepad -->
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.3.0/firepad.css" />
+    <script src="https://cdn.firebase.com/libs/firepad/1.3.0/firepad.min.js"></script>
     <script src="lib/sandbox.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://togetherjs.com/togetherjs-min.js"></script>
+
 </body>
 
 </html>

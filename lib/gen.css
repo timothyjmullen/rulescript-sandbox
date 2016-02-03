@@ -282,6 +282,17 @@
 		background-color:inherit!important;
 		background-position:50% 0 !important;
 	}
+	.firepad {
+	  width: 100%;
+		padding:0;
+		margin:0;
+		position:absolute!important;
+		top:40px;
+		bottom:30px!important;
+	}
+	.firepad #editor {
+		top:0px;
+	}
 	/* POPUP
 	**********************************************************/
 	#popup {
