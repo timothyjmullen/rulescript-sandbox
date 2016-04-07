@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
     <link href='lib/gen.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.3.0/firepad.css" />
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                     <span>toggle menu</span>
                 </button>
             </div>
-            <h3 class="help fr" title="Help">?</h3>
+            <h3 id="help" class="help fr" title="Help Reference">?</h3>
             <h1 class="nav fr">RuleScript Sandbox</h1>
             <div id="header"></div>
         </div>
@@ -126,13 +127,17 @@
     <!-- jquery for stupid smooth stuff -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- firebase required files -->
     <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+    <!-- moment js to make my life a little easier could replace this later -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-    <script src="lib/ace.js" type="text/javascript" charset="utf-8"></script>
-    <!-- Firepad -->
-    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.3.0/firepad.css" />
+    <!-- ace editor -->
+	<script src="lib/ace.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Firepad for collaboration function -->
     <script src="https://cdn.firebase.com/libs/firepad/1.3.0/firepad.min.js"></script>
-    <script src="lib/sandbox.js" type="text/javascript" charset="utf-8"></script>
+    <!-- custom sandbox script -->
+    <script src="lib/help.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/sandbox.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 
